@@ -1,0 +1,12 @@
+.main-container {
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 60px;
+  text-shadow: 4px 3px 2px blue;
+  background: lightseagreen;
+}
