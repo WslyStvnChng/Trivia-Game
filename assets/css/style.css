@@ -1,6 +1,6 @@
 body {
-    background: url("..//images/background.jpg");
-    background-size: auto;
+    background: url("..//images/bg.jpg");
+    background-size: 100%;
     /* opacity: 1.5; */
     font-size: 30px;
     text-align: center;
@@ -19,9 +19,9 @@ body {
 h1 {
     color: black;
     font-size: 60px;
-    text-shadow: 3px 2px 3px red;
+    text-shadow: 3px 2px 3px white;
     text-transform: uppercase;
-    text-decoration: underline white;
+    text-decoration: underline black;
     font-family: 'Lobster', cursive;
 }
 
