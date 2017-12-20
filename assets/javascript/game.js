@@ -24,19 +24,19 @@ $(document).ready(function() {
       correct: "Eobard Thawne"
     },
     {
-      question: "Question 4: Who killed Nora Allen in The Flash Comics?",
-      answers: ["Eobard Thawne", "Henry Allen", "Captain Cold", "Hunter Zolomon"],
-      correct: "Eobard Thawne"
+      question: "Question 4: Shaquille O'Neal was known to have one of the worst FT% of NBA history until which player took his rank?",
+      answers: ["Wilt Chamberlain", "Ben Wallace", "Andre Drummond", "Deandre Jordan"],
+      correct: "Andre Drummond"
     },
     {
-      question: "Question 5: Who killed Nora Allen in The Flash Comics?",
-      answers: ["Eobard Thawne", "Henry Allen", "Captain Cold", "Hunter Zolomon"],
-      correct: "Eobard Thawne"
+      question: "Question 5: What year was the National Basketball Association first established?",
+      answers: ["1958", "1945", "1935", "1946"],
+      correct: "1946"
     },
     {
-      question: "Question 6: Who killed Nora Allen in The Flash Comics?",
-      answers: ["Eobard Thawne", "Henry Allen", "Captain Cold", "Hunter Zolomon"],
-      correct: "Eobard Thawne"
+      question: "Question 6: Michael Jordan was drafted third overall in 1984. Which two players were selected ahead of him?",
+      answers: ["Patrick Ewing & Hakeem Olajuwon", "Hakeem Olajuwon & Sam Bowie", "Charles Barkley & Hakeem Olajuwon", "Karl Malone & Sam Bowie"],
+      correct: "Hakeem Olajuwon & Sam Bowie"
     },
     {
       question: "Question 7: Who killed Nora Allen in The Flash Comics?",
@@ -57,6 +57,6 @@ $(document).ready(function() {
       question: "Question 10: Who killed Nora Allen in The Flash Comics?",
       answers: ["Eobard Thawne", "Henry Allen", "Captain Cold", "Hunter Zolomon"],
       correct: "Eobard Thawne"
-    
-}
+    } 
 ]
+});
