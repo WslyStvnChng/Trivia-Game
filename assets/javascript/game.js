@@ -1,10 +1,37 @@
-// $(document).ready(function() {
+$(document).ready(function () {
 
-  //Creating global variables to initize the game
-  var start = 30;
-  var correctAnswer = 0;
-  var wrongAnswer = 0;
-  var timer;
+  var index = 0;
+  var countDownTimer = {
+    time: 30,
+    reset: function reset() {
+      this.time = 30;
+      $('.timer').html('<h3>' + this.time + ' seconds remaining<h3/>' + 'hello');
+    },
+    start: function start() {
+      counter = setInterval(countDownTimer.count, 1000);
+    },
+    stop: function stop() {
+      clearInterval(counter);
+    },
+    count: function count() {
+      countDownTimer.time--;
+      console.log(countDownTimer.time);
+      if (countDownTimer.time >= 0) {
+        $('.timer').html('<h3>' + countDownTimer.time + 'seconds remaining </h3>');
+      } else {
+        index++;
+        answerWrong();
+        countDownTimer.reset();
+        if (index < trivia.Array.length) {
+          loadQuestions(index);
+        } else {
+          $('.answerchoice').hide();
+          showScore();
+        }
+      }
+    }
+  };
+});
 
   var trivia = [
     {
@@ -63,9 +90,9 @@
 
 //Set Timer
 
-$("#let-play-btn").on("click", function() {
-timer = setTimeout(function() {
-  alert("NBA Trivia Start's Now")
-},1000);
+// $("#let-play-btn").on("click", function() {
+// timer = setTimeout(function() {
+//   alert("NBA Trivia Start's Now")
+// },1000);
+// }
 
-});
