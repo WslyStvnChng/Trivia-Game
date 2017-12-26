@@ -1,22 +1,5 @@
-//New variables to grab onto html
-var questionsContainer = document.getElementById('questions');
-var resultsContainer = document.getElementById('reslts');
-var submitButton = document.getElementById('btn');
 
-//Functions to build the trivia
-
-function buildQuestions() {}
-
-function showResults() {}
-
-//show questions immedidately
-
-buildQuestions();
-
-//on submit, show results
-submitButton.addEventListener('click', showResults);
-///
-const trivia = [
+const myTrivia = [
   {
   question: "Question 1: Who is the All-Time Scoring leader in the NBA?",
   answers: {
@@ -119,4 +102,26 @@ const trivia = [
   }
 ];
 
+function startTimer(duration, display) {
+  var timer = duration,
+    minutes, seconds;
+  setInterval(function () {
+    minutes = parseInt(timer / 60, 10)
+    seconds = parseInt(timer % 60, 10);
 
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    display.textContent = minutes + ":" + seconds;
+
+    if (--timer < 0) {
+      timer = duration;
+    }
+  }, 1000);
+}
+
+window.onload = function () {
+  var fiveMinutes = 60 * 10,
+    display = document.querySelector('.timer');
+  startTimer(fiveMinutes, display);
+};
