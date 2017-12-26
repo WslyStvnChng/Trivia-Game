@@ -116,12 +116,44 @@ function startTimer(duration, display) {
 
     if (--timer < 0) {
       timer = duration;
+      stop();
     }
   }, 1000);
 }
 
 window.onload = function () {
-  var fiveMinutes = 60 * 10,
+  var fiveMinutes = 60 * 8,
     display = document.querySelector('.timer');
   startTimer(fiveMinutes, display);
 };
+
+var triviaContainer = $('#question');
+var results = $('#results');
+var playBtn = $('#btn');
+
+(function() {
+function startTrivia () {
+  var output = [];
+
+  trivia.forEach((currentQuestion, questionNumber) => {
+    //
+    var answers = [];
+
+    for(letter in currentQuestion.answers) {
+      //adding an HTML radio button
+      answers.push(
+        `<label>
+            <input type="radio" name="question${questionNumber}" value="${letter}">
+            ${letter} :
+            ${currentQuestion.answers[letter]}
+          </label>`
+      );
+      }
+       // add this question and its answers to the output
+       output.push(
+       `<div class="question"> ${currentQuestion.question} </div>
+        <div class="answers"> ${answers.join("")} </div>`
+       );
+       return();
+    });
+
