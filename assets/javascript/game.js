@@ -15,24 +15,6 @@ buildQuestions();
 
 //on submit, show results
 submitButton.addEventListener('click', showResults);
-
-//   question: "When was the last time Denver Nuggets won the NBA Championships?",
-//   answers: ["1970", "1975", "1976", "None"],
-//   correct: "None"
-// }, {
-//   question: "Question 8: Who retired July 16, 2016 before Kobe Bryant and Tim Duncan?",
-//   answers: ["Shawn Marion", "Elton Brand", "Amar'e Stoudemire", "Kenyon Martin"],
-//   correct: "Amar'e Stoudemire"
-// }, {
-//   question: "At the end of the 2015-2016 NBA season. Who led the league in total rebounds?",
-//   answers: ["Andre Drummond", "Anthony Davis", "Deandre Jordan", "Hassan Whiteside"],
-//   correct: "Andre Drummond"
-// }, {
-//   question: "Question 10: Which of these NBA teams did not have a total of four all-stars on their team during a certain year?",
-//   answers: ["2013-2014 Atlanta Hawks", "2016-2017 Golden State Warriors", "1982-1983 Philadelphia 76ers", "2010-2011 Boston Celtics"],
-//   correct: "2013-2014 Atlanta Hawks"
-// }]
-
 ///
 const trivia = [
   {
@@ -96,52 +78,45 @@ const trivia = [
     correctAnswer: "b"
   },
   {
-  question: "Question 1: Who is the All-Time Scoring leader in the NBA?",
+  question: "Question 7: When was the last time Denver Nuggets won the NBA Championships?",
     answers: {
-      a: "Kobe Bryant",
-      b: "Michael Jordan",
-      c: "Karl Malone",
-      d: "Kareem Abdul-Jabbar"
+      a: "1960",
+      b: "1965",
+      c: "1962",
+      d: "none"
     },
     correctAnswer: "d"
   },
-  question: "Question 1: Who is the All-Time Scoring leader in the NBA?",
+  {
+  question: "Question 8: Who retired July 16, 2016 before Kobe Bryant and Tim Duncan?",
     answers: {
-      a: "Kobe Bryant",
-      b: "Michael Jordan",
-      c: "Karl Malone",
-      d: "Kareem Abdul-Jabbar"
+      a: "Shawn Marion",
+      b: "Elton Brand",
+      c: "Amar'e Stoudemire",
+      d: "Kenyon Martin"
+    },
+    correctAnswer: "c"
+  },
+  {
+  question: "Question 9: At the end of 2015-2016 NBA season. Who led the league in total rebounds?",
+    answers: {
+      a: "Andre Drummond",
+      b: "Anthony Davis",
+      c: "Deandre Jodan",
+      d: "Hassan Whiteside"
+    },
+    correctAnswer: "a"
+  },
+  {
+  question: "Question 10: Which of these NBA taems did not have a total of four All-Stars on their during a certain year?",
+    answers: {
+      a: "13-14' Atlanta Hawks",
+      b: "16-17' Golden State Warriors",
+      c: "82-83' Philadelphia 76ers",
+      d: "10-11 Boston Celtics"
     },
     correctAnswer: "d"
-  },
-  question: "Question 1: Who is the All-Time Scoring leader in the NBA?",
-    answers: {
-      a: "Kobe Bryant",
-      b: "Michael Jordan",
-      c: "Karl Malone",
-      d: "Kareem Abdul-Jabbar"
-    },
-    correctAnswer: "d"
-  },
-  question: "Question 1: Who is the All-Time Scoring leader in the NBA?",
-    answers: {
-      a: "Kobe Bryant",
-      b: "Michael Jordan",
-      c: "Karl Malone",
-      d: "Kareem Abdul-Jabbar"
-    },
-    correctAnswer: "d"
-  },
-  question: "Question 1: Who is the All-Time Scoring leader in the NBA?",
-    answers: {
-      a: "Kobe Bryant",
-      b: "Michael Jordan",
-      c: "Karl Malone",
-      d: "Kareem Abdul-Jabbar"
-    },
-    correctAnswer: "d"
-  },
+  }
+];
 
-}
-}]
 
