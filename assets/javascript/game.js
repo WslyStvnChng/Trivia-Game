@@ -5,8 +5,8 @@ var myMusic;
 
 ///////////////////////////////////////////////////////////////////////////////
 
-var aud = document.getElementById("myAudio");
-aud.volume = 0.2; // 1 means 100%
+// var aud = document.getElementById("myAudio");
+// aud.volume = 0.2; // 1 means 100%
 //Making a function with buttons in Js
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -125,8 +125,9 @@ var game = {
           questions[this.currentQuestion].answers[i] +
           "</button>"
       );
-      document.getElementById("subwrapper").style.background="#4aaaa5";
-      document.getElementById("subwrapper").style.height = "200px";
+      document.getElementById("subwrapper").style.background ="#808080";
+      document.getElementById("subwrapper").style.height = "500px";
+      document.getElementById("quiz-area").style.color = "#ffffff";
 
     }
   },
