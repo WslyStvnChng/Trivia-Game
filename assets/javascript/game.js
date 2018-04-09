@@ -5,8 +5,8 @@ var myMusic;
 
 ///////////////////////////////////////////////////////////////////////////////
 
-// var aud = document.getElementById("myAudio");
-// aud.volume = 0.2; // 1 means 100%
+var aud = document.getElementById("myAudio");
+aud.volume = 0.2; // 1 means 100%
 //Making a function with buttons in Js
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -38,7 +38,7 @@ $(document).on("click", "#start", function(e) {
 
 var questions = [
   {
-    question: "How many total number of points scored by The Truth?",
+    question: "How many total points scored did The Truth completed in his career?",
     answers: ["26,946", "26,397", "26,397", "26,395"],
     correctAnswer: "26,397",
     image: "assets/images/pierce.jpg"
@@ -79,7 +79,7 @@ var questions = [
     image: "assets/images/worthy.jpg"
   },
   {
-    question: "Who is 24 th on the all time nba scoring list?",
+    question: "Who is 24th on the all time nba scoring list?",
     answers: ["Vince Carter", "Allen Iverson", "Ray Alen", "Alex English"],
     correctAnswer: "Allen Iverson",
     image: "assets/images/iverson.jpg"
@@ -89,11 +89,6 @@ var questions = [
     answers: ["39 and 31", "31 and 39", "41 and 39", "39 and 41"],
     correctAnswer: "39 and 31",
     image: "assets/images/gamethree.jpg"
-  },
-  {
-    question: "Nam this song in the background?",
-    answers: ["Love", "Humble", "Loyality", "DNA"],
-    correctAnswer: "Humble",
   }
 ];
 
