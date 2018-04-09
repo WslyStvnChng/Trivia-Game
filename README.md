@@ -1,5 +1,5 @@
 
-# NBA Trivia Hame
+# NBA Trivia Game
 
 # Overview
 *This ia a Trivia game built using JavaScript for the logic and jQuery to manipulate the DOM.</p>
