@@ -2,7 +2,7 @@
 # NBA Trivia Game
 
 # Overview
-* This ia a Trivia game built using JavaScript for the logic and jQuery to manipulate the DOM.</p>
+* This is a Trivia game built using JavaScript for the logic and jQuery to manipulate the DOM.</p>
 
 
 # Built
@@ -26,6 +26,8 @@
 
 # Fork
 * Fork this repo if you like to add more questions onto this fun application.
+
+
 
 
 
